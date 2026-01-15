@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+target/
+
+# Binaries
+localai
+localai-backend
+localai-backend.exe
+localai-server
+backend/localai-server
+*.exe
+# But include Tauri sidecar binaries
+!frontend/src-tauri/binaries/*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Claude Code
+.claude/
+claude/
+*.jsonl
