@@ -183,7 +183,7 @@ export function Sidebar({ onSelectSession, onNewSession, onDeleteSession, onRena
     <div className="w-64 flex-none bg-[#050505] border-r border-[var(--border-subtle)] flex flex-col h-full text-sm select-none">
       <div className="h-12 px-4 border-b border-[var(--border-subtle)] flex items-center justify-between bg-[#050505]/50 backdrop-blur-sm">
         <span className="font-semibold text-zinc-200 tracking-tight flex items-center gap-2">
-          <LayoutGrid className="w-4 h-4 text-indigo-500" />
+          <img src="/logo-small.png" alt="LocalAI" className="w-5 h-5" />
           LocalAI
         </span>
         <button

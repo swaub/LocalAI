@@ -15,7 +15,6 @@ import {
   ToggleLeft,
   ToggleRight,
   Box,
-  Cpu,
   Info,
   ExternalLink,
   Shield,
@@ -61,7 +60,7 @@ interface Tab {
 }
 
 const TABS: Tab[] = [
-  { id: 'models', label: 'Local Models', icon: <Cpu className="w-4 h-4" /> },
+  { id: 'models', label: 'Local Models', icon: <HardDrive className="w-4 h-4" /> },
   { id: 'providers', label: 'Cloud Providers', icon: <Cloud className="w-4 h-4" /> },
   { id: 'about', label: 'About', icon: <Info className="w-4 h-4" /> },
 ];
@@ -633,15 +632,15 @@ export function Settings({ onBack }: SettingsProps) {
           {activeTab === 'about' && (
             <div className="animate-fade-in space-y-6">
               <div className="card p-8 text-center bg-gradient-to-b from-zinc-900 to-zinc-900/50">
-                <div className="w-16 h-16 mx-auto bg-indigo-500 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/20 mb-4">
-                  <Cpu className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 mx-auto rounded-2xl overflow-hidden shadow-lg shadow-indigo-500/20 mb-4">
+                  <img src="/logo-small.png" alt="LocalAI" className="w-full h-full object-contain" />
                 </div>
                 <h2 className="text-xl font-bold text-white mb-2">LocalAI</h2>
                 <p className="text-zinc-400 max-w-sm mx-auto mb-6">
                   A powerful, private multi-agent interface for your local LLMs.
                 </p>
                 <span className="inline-block px-3 py-1 bg-zinc-800 rounded-full text-xs text-zinc-500 font-mono">
-                  v0.0.5
+                  v0.0.6
                 </span>
               </div>
 
